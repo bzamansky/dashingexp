@@ -1,6 +1,7 @@
 <% content_for(:title) { "My super sweet dashboard" } %>
 <div class="gridster">
   <ul>
+
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
     </li>
@@ -14,13 +15,17 @@
       <div data-id="tumblr" data-view="List" data-unordered="true" data-title="Tumblr" data-moreinfo="# of times tag appears"></div>
     </li>
 
+
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="Percent Empty Docks" data-prefix=""></div>
+      <div data-id="valuation" data-view="Number" data-title="Number" data-moreinfo="Percent Empty Docks" data-prefix=""></div>
     </li>
+
 
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
     </li>
+
+
   </ul>
   <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
 </div>

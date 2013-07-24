@@ -73,6 +73,7 @@ li[class^="icon-"]:before, li[class*=" icon-"]:before {
 li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
   text-indent: -1.3333333333333333em;
 }
+
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
 .icon-glass:before                { content: "\f000"; }
@@ -301,3 +302,9 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-paste:before                { content: "\f0ea"; }
 
 .icon-user-md:before              { content: "\f200"; }
+
+.icon-ok:before			  { content: "\f201"; }
+.icon-ban-circle:before		  { content: "\f202"; }
+.icon-remove-sign:before	  { content: "\f203"; }
+.icon-remove-circle:before	  { content: "\f204"; }
+.icon-time:before		  { content: "\f205"; }

@@ -14,7 +14,12 @@ class Dashing.Number extends Dashing.Widget
   @accessor 'arrow', ->
     if @get('last')
       if parseInt(@get('current')) > parseInt(@get('last')) then 'icon-arrow-up' else 'icon-arrow-down'
-
+/*
+//this will probably be what you use
+  @accessor 'icon', ->
+    //check to see if it's good or bad
+    'icon-ok'
+*/
   onData: (data) ->
     if data.status
       # clear existing "status-*" classes

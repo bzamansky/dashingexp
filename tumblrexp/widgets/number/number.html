@@ -1,5 +1,8 @@
 <h1 class="title" data-bind="title"></h1>
 
+<!--
+<div class="line">############</div>
+
 <h2 class="value" data-bind="current | shortenedNumber | prepend prefix | append suffix"></h2>
 
 <p class="change-rate">
@@ -9,3 +12,45 @@
 <p class="more-info" data-bind="moreinfo | raw"></p>
 
 <p class="updated-at" data-bind="updatedAtMessage"></p>
+-->
+
+<table class="table-bordered">
+	<tr>	
+		<td>
+			<h2 class="value-1">1</h2>	
+		</td>
+		<td>
+			<h2 class="value-2">2</h2>
+		</td>
+		<td>
+			<h2 class="value-3">3</h2>
+		</td>
+		<td>
+			<h2 class="value-4">4</h2>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<p class="status">
+				<i data-bind-class="icon"></i>
+			</p>
+		</td>
+		<td>
+			<p class="status">
+				<i data-bind-class="icon"></i>
+			</p>
+		</td>
+			<p class="status">
+				<i data-bind-class="icon"></i>
+			</p>
+		<td>
+			<p class="status">
+				<i data-bind-class="icon"></i>
+			</p>
+		</td>
+	</tr>
+</table>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
+
+
